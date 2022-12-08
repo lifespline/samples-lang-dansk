@@ -1,0 +1,59 @@
+.. raw:: html
+
+   <a href="https://github.com/lifespline/backlog.git"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_darkblue_121621.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+
+===========================================
+✅ TR20: Draft Solution System Architecture
+===========================================
+
+About
+-----
+
+The solution requires an analysis of its system's architecture.
+
+Solution
+--------
+
+We'll use networkx to generate the network, and a dash server to render the data. The operations to the network will happen through the CLI, meaning there will be a CLI client (node). The data persistence is handled by Redis. It is yet unclear what will be stored in Redis to represent each node.
+
+* solution host: linux + docker compose + browser
+* network editing interface (CLI): invoke (CLI client) -> python (data client utils) -> node (server)
+* network data engine: redis
+* network rendering engine: networkx
+* network rendering interface: dash (webserver) -> python (data client utils) -> node (server)
+
+.. image:: ../../../../../static/img/architecture/system-architecture.png
+    :width: 600
+    :alt: System Architecture
+
+
+Definition of ready
+-------------------
+
+Doesn't apply.
+
+Acceptance Criteria
+-------------------
+
+* choose technologies for all of the components:
+   * solution host
+   * network rendering interface
+   * network rendering engine
+   * network editing interface
+   * network data engine
+
+QA Acceptance Criteria
+----------------------
+
+* documentation
+* PR documentation
+
+Pull Request
+------------
+
+`CODE <https://github.com/lifespline/backlog/pull/CODE>`_
+
+Requirements Dependencies
+-------------------------
+
+None

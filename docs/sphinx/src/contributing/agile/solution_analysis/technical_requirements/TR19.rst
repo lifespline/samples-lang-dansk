@@ -1,0 +1,54 @@
+.. raw:: html
+
+   <a href="https://github.com/lifespline/backlog.git"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_darkblue_121621.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+
+=========================================
+✅ TR19: Draft Solution System Components
+=========================================
+
+About
+-----
+
+The solution requires an analysis on its components.
+
+Solution
+--------
+
+The architecture has the following components:
+
+.. image:: ../../../../../static/img/architecture/components-interaction.png
+    :width: 600
+    :alt: System Components
+
+
+Definition of ready
+-------------------
+
+Doesn't apply.
+
+Acceptance Criteria
+-------------------
+
+* components for:
+   * solution host
+   * network rendering interface
+   * network rendering engine
+   * network editing interface
+   * network data engine
+   * node representation
+
+QA Acceptance Criteria
+----------------------
+
+* documentation
+* PR documentation
+
+Pull Request
+------------
+
+`CODE <https://github.com/lifespline/backlog/pull/CODE>`_
+
+Requirements Dependencies
+-------------------------
+
+None
